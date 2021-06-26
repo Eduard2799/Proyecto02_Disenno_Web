@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/styles.css">
+
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper" style="color: white;">
+        <!-- Sidebar -->
+        <nav id="sidebar" style="background-color: #adb5bd ;">
+            <div class="sidebar-header text-primary p-3">
+                <br>
+                <h3><i class="fas fa-stopwatch fa-2x"></i>Cronos</h3>
+            </div>
+
+            <div class="p-3">
+                <hr>
+                <p>Felipe Gómez Quesada</p>
+                <hr>
+            </div>
+
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link active" id="projects_option">
+                        <i class="nav-icon fas fa-folder-open"></i> Projects
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="tasks.html" class="nav-link" id="tasks_option">
+                        <i class="nav-icon fas fa-tasks"></i> Tasks
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="help.html" class="nav-link" id="help_option">
+                        <i class="nav-icon fas fa-question-circle"></i> Help
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+        <!-- Page Content -->
+        <div id="content" style="width: 100%;">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+                <form class="d-flex" action="../index.html" style="text-align: z;">
+                    <button class="btn btn-outline-success" type="submit">Logout</button>
+                </form>
+                &nbsp; &nbsp;
+            </nav>
+
+            <main class="bg-light">
+                <div class="container" style="color: black;">
+                    <div class="row">
+                        <h1>Project Management</h1>
+                    </div>
+                    <!-- Default box -->
+                    <div class="card card-success">
+                        <div class="card-header bg-success text-white">
+                            <h3 class="card-title">Add new project</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        <form action="projects.html" method="">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="form-group">
+                                            <label for="name">Project name</label>
+                                            <input required="" type="text" class="form-control" id="name" name="name" placeholder="Name" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-group">
+                                            <label for="start_at">Start date</label>
+                                            <input required="" type="date" class="form-control" id="start_at" name="start_at" placeholder="Start date" value="" min="2021-06-26">
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-group">
+                                            <label for="end_at">Ending date</label>
+                                            <input required="" type="date" class="form-control" id="end_at" name="end_at" placeholder="Ending date" value="" min="2021-06-26">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="description">Description</label>
+                                            <textarea required="" class="form-control" id="description" name="description" placeholder="Description"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card-body -->
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-success ">Save</button>
+                            </div>
+
+                        </form>
+                    </div>
+                    <!-- /.card -->
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+<script>
+    $(document).ready(function() {
+
+        $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        });
+
+        $('#sidebarCollapse').on('click', function() {
+            $('#sidebar').toggleClass('active');
+        });
+
+    });
+</script>
+
+</html>

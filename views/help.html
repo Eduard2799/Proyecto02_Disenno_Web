@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/styles.css">
+
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper" style="color: white;">
+        <!-- Sidebar -->
+        <nav id="sidebar" style="background-color: #adb5bd ;">
+            <div class="sidebar-header text-primary p-3">
+                <br>
+                <h3><i class="fas fa-stopwatch fa-2x"></i>Cronos</h3>
+            </div>
+
+            <div class="p-3">
+                <hr>
+                <p>Felipe Gómez Quesada</p>
+                <hr>
+            </div>
+
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link" id="projects_option">
+                        <i class="nav-icon fas fa-folder-open"></i> Projects
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="tasks.html" class="nav-link" id="tasks_option">
+                        <i class="nav-icon fas fa-tasks"></i> Tasks
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="help.html" class="nav-link active" id="help_option">
+                        <i class="nav-icon fas fa-question-circle"></i> Help
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+        <!-- Page Content -->
+        <div id="content" style="width: 100%;">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+                <form class="d-flex" action="../index.html" style="text-align: z;">
+                    <button class="btn btn-outline-success" type="submit">Logout</button>
+                </form>
+            </nav>
+
+            <main class="bg-light">
+                <div class="container" style="color: black;">
+
+                    <div class="content container">
+                        <h1><b class="text-primary mt-5">Project Management</b></h1>
+
+                        <h2 class="text-primary mt-5">Create a new project</h2>
+                        <div class="mt-5">
+                            <p class="h4">1) To add a new project, go to the option "Projects" in the side menu and then press the "add new" button.</p>
+                            <img src="images/cap_1.png" class="mx-auto d-block mt-4">
+                        </div>
+                        <div class="mt-5">
+                            <p class="h4">2) Then proceed to complete the form fields and press the "save" button.</p>
+                            <img src="images/cap_2.png" class="mx-auto d-block mt-4">
+                        </div>
+                        <div class="mt-5">
+                            <p class="h4">3) Now you can see the new project added on the main page. The projects that other users have shared with you also appear here, however you will not be able to share them because you are not the owner.</p>
+                            <img src="images/cap_3.png" class="mx-auto d-block mt-4">
+                        </div>
+
+                        <h2 class="text-primary mt-5">Edit a project</h2>
+                        <div class="mt-5">
+                            <p class="h4">1) To edit a project press the button with the pencil icon in the corresponding row of the table.</p>
+                            <img src="images/cap_4.png" class="mx-auto d-block mt-4">
+                        </div>
+                        <div class="mt-5">
+                            <p class="h4">2) Then proceed to edit the form fields and press the "save" button.</p>
+                            <img src="images/cap_5.png" class="mx-auto d-block mt-4">
+                        </div>
+
+                        <h2 class="text-primary mt-5">Delete a project</h2>
+                        <div class="mt-5">
+                            <p class="h4">1) If you want to delete a project simply press the trash icon in the corresponding column of the table. Once pressed, the project will disappear from the table along with its associated tasks.</p>
+                            <img src="images/cap_4.png" class="mx-auto d-block mt-4">
+                        </div>
+
+                        <h2 class="text-primary mt-5">Share a project</h2>
+                        <div class="mt-5">
+                            <p class="h4">1) To share a project press the share icon.</p>
+                            <img src="images/cap_5.png" class="mx-auto d-block mt-4">
+                        </div>
+                        <div class="mt-5">
+                            <p class="h4">2) In the new screen press the button "add new user".</p>
+                            <img src="images/cap_6.png" class="mx-auto d-block mt-4">
+                        </div>
+                        <div class="mt-5">
+                            <p class="h4">3) In the pop-up window choose the user to whom you want to share the project and press the button "add user".</p>
+                            <img src="images/cap_7.png" class="mx-auto d-block mt-4">
+                        </div>
+                        <div class="mt-5">
+                            <p class="h4">4) Then you can see the new user added in the table. If you want to delete the user just press the trash icon.</p>
+                            <img src="images/cap_8.png" class="mx-auto d-block mt-4">
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+
+                        <h1><b class="text-primary mt-5">Task Management</b></h1>
+
+                        <h2 class="text-primary mt-5">Create a new task</h2>
+                        <div class="mt-5">
+                            <p class="h4">1) To add a new task, go to the option "Tasks" in the side menu and then press the "add new" button.</p>
+                            <img src="images/cap_9.png" class="mx-auto d-block mt-4">
+                        </div>
+                        <div class="mt-5">
+                            <p class="h4">2) Then proceed to complete the form fields and associate the task with the correct project using the selection field, press the "save" button.</p>
+                            <img src="images/cap_10.png" class="mx-auto d-block mt-4">
+                        </div>
+                        <div class="mt-5">
+                            <p class="h4">3) Now you can see the new task added on the main page.</p>
+                            <img src="images/cap_11.png" class="mx-auto d-block mt-4">
+                        </div>
+
+                        <h2 class="text-primary mt-5">Edit a task</h2>
+                        <div class="mt-5">
+                            <p class="h4">1) To edit a task press the button with the pencil icon in the corresponding row of the table.</p>
+                            <img src="images/cap_12.png" class="mx-auto d-block mt-4">
+                        </div>
+                        <div class="mt-5">
+                            <p class="h4">2) Then proceed to edit the form fields and press the "save" button.</p>
+                            <img src="images/cap_13.png" class="mx-auto d-block mt-4">
+                        </div>
+
+                        <h2 class="text-primary mt-5">Delete a task</h2>
+                        <div class="mt-5">
+                            <p class="h4">1) If you want to delete a project simply press the trash icon in the corresponding column of the table. Once pressed, the task will disappear from the table.</p>
+                            <img src="images/cap_12.png" class="mx-auto d-block mt-4">
+                        </div>
+
+                        <h2 class="text-primary mt-5">Task timer</h2>
+                        <div class="mt-5">
+                            <p class="h4">1) To start counting the time invested in a task, press the "start timer" button, the "start date" will appear in the table and the "status" of the task will change.</p>
+                            <img src="images/cap_14.png" class="mx-auto d-block mt-4">
+                        </div>
+                        <div class="mt-5">
+                            <p class="h4">2) To stop the task timer, press the "stop timer" button in the row of the corresponding task. Once pressed, the end date and time will be added, the status will change to finished and the time spent will be displayed.</p>
+                            <img src="images/cap_15.png" class="mx-auto d-block mt-4">
+                        </div>
+                        <div class="mt-5 mb-5">
+                            <p class="h4">3) In the project management screen we can see how the task that we have just finished appears in the "finished tasks" column, and the progress is 100% since the project only has that task associated with it.</p>
+                            <img src="images/cap_16.png" class="mx-auto d-block mt-4">
+                        </div>
+
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+<script>
+    $(document).ready(function() {
+
+        $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        });
+
+        $('#sidebarCollapse').on('click', function() {
+            $('#sidebar').toggleClass('active');
+        });
+
+    });
+</script>
+
+</html>
